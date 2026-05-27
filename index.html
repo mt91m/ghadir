@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>حادثه غدیر خم | واقعه حجةالوداع</title>
+    <meta name="description" content="روایت واقعه غدیر خم، خطبه ۵ ساعته پیامبر و اعلام جانشینی امام علی (ع) در گرمترین روز تاریخ">
+    <meta name="author" content="DeepSeek">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            cursor:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 32"><path d="M12 1 L12 1 C10 1 8.5 2.5 8.5 4.5 L8.5 6 L15.5 6 L15.5 4.5 C15.5 2.5 14 1 12 1 Z" fill="%23d4af37" stroke="%238b5a2b" stroke-width="1"/><rect x="9" y="6" width="6" height="18" fill="%23c49a2c" stroke="%238b5a2b" stroke-width="0.8"/><polygon points="12,24 9,28 15,28" fill="%23d4af37" stroke="%238b5a2b" stroke-width="0.8"/><circle cx="12" cy="3" r="2" fill="%23ffcc66"/><rect x="10" y="8" width="4" height="3" fill="%238b5a2b" opacity="0.6"/><rect x="10" y="13" width="4" height="3" fill="%238b5a2b" opacity="0.6"/><rect x="10" y="18" width="4" height="3" fill="%238b5a2b" opacity="0.6"/><circle cx="12" cy="29" r="1.5" fill="%23ffcc66"/><text x="10" y="31" font-size="5" fill="%23ffffff" font-weight="bold">☪</text></svg>') 12 4, auto;
+        }
+
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+            transition: background 0.3s ease, color 0.2s;
+            min-height: 100vh;
+        }
+
+        /* ===== تم روشن (پیش‌فرض) ===== */
+        body.light {
+            background: linear-gradient(145deg, #fff5e8, #ffe8d4);
+            color: #2c1c0c;
+        }
+        body.light .step-view, body.light .timeline-item {
+            background: rgba(255, 245, 230, 0.85);
+            backdrop-filter: blur(10px);
+            border-color: #ffb86b;
+            color: #3b260f;
+        }
+        body.light .heat-banner {
+            background: linear-gradient(120deg, #e0671a, #bb4411);
+        }
+        body.light .sub {
+            color: #b45f1b;
+        }
+        body.light .timeline-item:hover {
+            background: rgba(255, 235, 210, 0.95);
+        }
+        body.light .theme-toggle {
+            color: #b45f1b;
+            background: rgba(0,0,0,0.05);
+        }
+        body.light .quote-glorious {
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.25), rgba(200, 140, 50, 0.1));
+        }
+
+        /* ===== تم تاریک ===== */
+        body.dark {
+            background: linear-gradient(145deg, #0f0802 0%, #1f0f05 100%);
+            color: #f5e6d3;
+        }
+        body.dark .step-view, body.dark .timeline-item {
+            background: rgba(20, 12, 5, 0.75);
+            backdrop-filter: blur(14px);
+            border-color: rgba(255, 180, 80, 0.4);
+        }
+        body.dark .heat-banner {
+            background: linear-gradient(120deg, #b13e00, #6f1d00);
+        }
+        body.dark .sub {
+            color: #ffd9a5;
+        }
+        body.dark .theme-toggle {
+            color: #ffd966;
+        }
+        body.dark .quote-glorious {
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.2), rgba(0,0,0,0.3));
+        }
+
+        /* تصویر پس‌زمینه */
+        body.light {
+            background-image: var(--light-bg, none);
+            background-size: cover;
+            background-attachment: fixed;
+            background-blend-mode: overlay;
+        }
+        body.dark {
+            background-image: var(--dark-bg, none);
+            background-size: cover;
+            background-attachment: fixed;
+            background-blend-mode: overlay;
+        }
+
+        /* ذرات */
+        .particle {
+            position: fixed;
+            background: rgba(255, 140, 50, 0.4);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+            animation: floatParticle linear infinite;
+        }
+
+        @keyframes floatParticle {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.5; }
+            90% { opacity: 0.2; }
+            100% { transform: translateY(-20vh) rotate(360deg); opacity: 0; }
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 1.5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 1.5rem;
+        }
+
+        .theme-toggle {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 200, 100, 0.5);
+            border-radius: 60px;
+            padding: 8px 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #ffcc66, #ff8800);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .step-view {
+            border-radius: 2rem;
+            padding: 2rem;
+            border: 1px solid;
+            margin: 1.5rem 0;
+            transition: 0.3s;
+            animation: fadeInScale 0.5s;
+        }
+
+        @keyframes fadeInScale {
+            from { opacity: 0; transform: scale(0.97); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .step-title {
+            font-size: 1.9rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            border-right: 5px solid #ffaa44;
+            padding-right: 1rem;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .step-title:hover {
+            color: #ffaa44;
+            transform: translateX(-5px);
+        }
+
+        .step-desc {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin: 1rem 0;
+        }
+
+        .step-icon {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            color: #ffaa44;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .nav-btn {
+            background: linear-gradient(135deg, #ffaa44, #ff8800);
+            border: none;
+            padding: 12px 32px;
+            border-radius: 50px;
+            font-family: inherit;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1rem;
+            color: #2c1a08;
+            transition: 0.2s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .nav-btn:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 20px rgba(255,100,0,0.5);
+        }
+
+        /* ساعت شنی */
+        .hourglass {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(0,0,0,0.3);
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-weight: bold;
+            margin: 0 4px;
+        }
+        .hourglass i {
+            animation: sandFall 1.5s infinite;
+        }
+        @keyframes sandFall {
+            0% { transform: rotate(0deg); opacity: 0.7; }
+            50% { transform: rotate(180deg); opacity: 1; }
+            100% { transform: rotate(360deg); opacity: 0.7; }
+        }
+
+        .heat-banner {
+            border-radius: 2rem;
+            padding: 0.8rem 1.5rem;
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            animation: pulseHeat 1.8s infinite;
+            font-weight: bold;
+        }
+
+        @keyframes pulseHeat {
+            0% { box-shadow: 0 0 5px #ff6600; }
+            100% { box-shadow: 0 0 18px #ffbb33; }
+        }
+
+        .human-chain {
+            background: rgba(0,0,0,0.3);
+            border-radius: 1.5rem;
+            padding: 1.2rem;
+            margin: 1.2rem 0;
+            text-align: center;
+        }
+
+        .chain-animation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+            margin-top: 0.8rem;
+        }
+
+        .chain-node {
+            background: #aa6f3c;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            transition: 0.2s;
+            box-shadow: 0 0 8px gold;
+        }
+
+        .chain-arrow {
+            font-size: 1.6rem;
+            color: #ffaa55;
+        }
+
+        .full-timeline {
+            display: none;
+            margin: 2rem 0;
+            animation: fadeInUp 0.6s;
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 1.5rem;
+            padding: 1.2rem;
+            border-right: 5px solid #ffaa44;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .timeline-item:hover {
+            transform: translateX(-5px);
+        }
+
+        .timeline-icon {
+            font-size: 2.2rem;
+            min-width: 60px;
+            text-align: center;
+            color: #ffaa44;
+        }
+
+        .quote-glorious {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 3rem;
+            border: 1px solid #d4af37;
+        }
+
+        .quote-arabic-big {
+            font-family: 'Amiri', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            animation: pulseNabz 1.8s infinite;
+        }
+
+        @keyframes pulseNabz {
+            0% { transform: scale(1); text-shadow: 0 0 0 #d4af37; }
+            50% { transform: scale(1.02); text-shadow: 0 0 15px #ffb347; }
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            font-size: 0.85rem;
+            opacity: 0.8;
+            border-top: 1px solid rgba(255,180,80,0.3);
+        }
+        .footer .dedication {
+            margin-top: 0.5rem;
+            font-weight: 500;
+            color: #ffaa66;
+        }
+
+        /* دکمه بازگشت به بالا */
+        .go-to-top {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: #ffaa44;
+            color: #2c1a08;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: 0.3s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            z-index: 100;
+        }
+        .go-to-top.show {
+            opacity: 1;
+        }
+        .go-to-top:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 650px) {
+            h1 { font-size: 2rem; }
+            .step-title { font-size: 1.4rem; }
+            .quote-arabic-big { font-size: 1.3rem; }
+            .chain-node { width: 40px; height: 40px; font-size: 1.2rem; }
+            .timeline-item { flex-direction: column; gap: 0.5rem; }
+        }
+    </style>
+</head>
+<body class="light">
+    <div class="container">
+        <div class="top-bar">
+            <div class="theme-toggle" id="themeSwitcher"><i class="fas fa-moon"></i> تم شب</div>
+        </div>
+
+        <div class="hero">
+            <h1>⚡ غدیر خم ⚡</h1>
+            <div class="sub">بزرگترین عید مسلمانان · سال ۱۰ هجری · حجةالوداع</div>
+        </div>
+
+        <div id="stepView" class="step-view"></div>
+        <div id="fullTimeline" class="full-timeline"></div>
+
+        <div class="footer">
+            <i class="fas fa-mosque"></i> واقعه غدیر خم · حجةالوداع · سال ۱۰ هجری قمری
+            <div class="dedication">✨ تقدیم به امیرالمؤمنین امام علی (ع) ✨</div>
+            <div style="font-size: 0.7rem; margin-top: 5px;">ساخته شده با DeepSeek</div>
+        </div>
+    </div>
+
+    <div class="go-to-top" id="goToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script>
+        // ======================= مرحله‌بندی =======================
+        const steps = [
+            {
+                title: "📢 آماده‌سازی & دعوت همگانی",
+                icon: "fas fa-mail-bulk",
+                desc: `پیامبر (ص) فرستادگانی به تمام شهرها فرستاد تا مردم را به حج دعوت کنند. حتی پیرمردها را گفت حتماً بیایند. فرمود: «تا چند وقت دیگر رحلت خواهم کرد». این <span class="hourglass"><i class="fas fa-hourglass-half"></i> اولین و آخرین حج پیامبر</span> (حجةالوداع) بود.`
+            },
+            {
+                title: "🏕️ توقف در غدیر خم",
+                icon: "fas fa-map-marked-alt",
+                desc: `بعد از پایان حج پیامبر (ص) فرمود که کسی به جایی نرود و به سمت آبگیر غدیر رفت و همه را در آنجا جمع کرد حدود 100 هزار نفر. آبگیر غدیر شبیه استادیوم بود پیامبر وسط و همه دور تا دور جمع شده بودند. همینطور هم آبگیر غدیر محل جدا شدن مسیر ها و تردد هم بوده است.`,
+                weather: true
+            },
+            {
+                title: "🎤 خطبه 3 ساعته + سیستم پخش زنده انسانی",
+                icon: "fas fa-microphone-alt",
+                desc: `در گرم‌ترین هوای ممکن، پیامبر حدود <span class="hourglass"><i class="fas fa-hourglass-half"></i> 3 ساعت</span> روی منبری که با استفاده از جهاز شتر درست کرد و خود روی آن ایستاد و علی (ع) را پایین تر نشاند خطبه خواند. در این خطبه , <span class="hourglass"><i class="fas fa-hourglass-half"></i> ۵۰ آیه</span> از قرآن را به امیرالمؤمنین علی (ع) مرتبط کرد.`,
+                hasChain: true
+            },
+            {
+                title: "اعلام جانشینی",
+                icon: "fas fa-hand-peace",
+                desc: "بعد پایان خطبه پیامبر دست علی (ع) را بلند کرد و فرمود: «مَنْ کُنْتُ مَوْلاَهُ فَهَذَا عَلِیٌّ مَوْلاَهُ». سپس بر همه واجب کرد با علی بیعت کنند. پیامبر به امام علی عمامه مشکی داد که نشانه جانشینی است و بر او واجب کرد تا رحلتش آن عمامه را بر سر کند."
+            },
+            {
+                title: "بیعت 3 روزه",
+                icon: "fas fa-handshake",
+                desc: `بعد از خطبه پیامبر همه را تک به تک مجبور که با علی (ع) بیعت کنند و برای همین کار بعضی از شترها را قربانی کردند و از آب آبگیر نوشیدند و <span class="hourglass"><i class="fas fa-hourglass-half"></i> 3 روز</span> در آنجا برای بیعت بودند و پیامبر بر هر کسی که غدیر را دیده بود واجب کرد که برای دیگران تعریف کند.`
+            }
+        ];
+
+        let currentStep = 0;
+        let completed = false;
+        let chainInterval = null;
+
+        const stepViewDiv = document.getElementById('stepView');
+        const fullTimelineDiv = document.getElementById('fullTimeline');
+
+        function buildChainAnimation(containerId) {
+            if (chainInterval) clearInterval(chainInterval);
+            const container = document.getElementById(containerId);
+            if (!container) return;
+            container.innerHTML = '';
+            const nodesCount = 7;
+            for (let i = 0; i < nodesCount; i++) {
+                const node = document.createElement('div');
+                node.className = 'chain-node';
+                if (i === 0) node.innerHTML = '<i class="fas fa-user-circle"></i>';
+                else if (i === nodesCount-1) node.innerHTML = '<i class="fas fa-flag-checkered"></i>';
+                else node.innerHTML = '<i class="fas fa-user"></i>';
+                container.appendChild(node);
+                if (i !== nodesCount-1) {
+                    const arrow = document.createElement('div');
+                    arrow.className = 'chain-arrow';
+                    arrow.innerHTML = '<i class="fas fa-arrow-left"></i>';
+                    container.appendChild(arrow);
+                }
+            }
+            let highlight = 0;
+            chainInterval = setInterval(() => {
+                const nodes = container.querySelectorAll('.chain-node');
+                if (nodes.length) {
+                    nodes.forEach(n => { n.style.transform = 'scale(1)'; n.style.backgroundColor = '#aa6f3c'; });
+                    const idx = highlight % nodes.length;
+                    nodes[idx].style.transform = 'scale(1.2)';
+                    nodes[idx].style.backgroundColor = '#f09d4c';
+                    highlight++;
+                }
+            }, 700);
+        }
+
+        // اسکرول به مرحله مورد نظر
+        function scrollToStep(stepIndex) {
+            if (stepIndex === currentStep && !completed) {
+                // هین همون مرحله‌ست
+                stepViewDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                return;
+            }
+            
+            // اگه توی حالت کامل هستیم، اول ریست می‌کنیم
+            if (completed) {
+                // ریختن به حالت عادی
+                if (chainInterval) clearInterval(chainInterval);
+                completed = false;
+                currentStep = stepIndex;
+                fullTimelineDiv.style.display = 'none';
+                stepViewDiv.style.display = 'block';
+                renderCurrentStep();
+                setTimeout(() => stepViewDiv.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+            } else if (stepIndex > currentStep) {
+                // اگه مرحله مورد نظر جلوتر هست، باید چند قدم جلو بریم
+                // سریع مراحل میانی رو رد می‌کنیم ولی بدون انیمیشن اضافه
+                const stepsToGo = stepIndex - currentStep;
+                for (let i = 0; i < stepsToGo; i++) {
+                    if (currentStep < steps.length - 1) {
+                        currentStep++;
+                    }
+                }
+                renderCurrentStep();
+                setTimeout(() => stepViewDiv.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+            } else if (stepIndex < currentStep) {
+                // عقب‌تر رفتن - ریست و شروع از اول
+                currentStep = stepIndex;
+                renderCurrentStep();
+                setTimeout(() => stepViewDiv.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+            }
+        }
+
+        function renderCurrentStep() {
+            if (completed) return;
+            const step = steps[currentStep];
+            let weatherHTML = '';
+            if (step.weather) {
+                weatherHTML = `<div class="heat-banner"><i class="fas fa-temperature-high"></i> 🔥 هوای طاقت‌فرسا: اگر غذای خام را زمین بندازی می‌پزد! 🔥 <i class="fas fa-fire"></i></div>`;
+            }
+            let chainHTML = '';
+            if (step.hasChain) {
+                chainHTML = `
+                    <div class="human-chain">
+                        <h4><i class="fas fa-broadcast-tower"></i> سیستم پخش زنده انسانی</h4>
+                        <div class="chain-animation" id="chainContainer"></div>
+                        <p style="margin-top: 10px;">پیامبر می‌فرمود → نفر بالاتر می‌شنید → برای بعدی تکرار می‌کرد <strong>الی الاخر</strong></p>
+                    </div>
+                `;
+            }
+
+            stepViewDiv.innerHTML = `
+                <div class="step-icon"><i class="${step.icon}"></i></div>
+                <div class="step-title" data-step="${currentStep}">${step.title}</div>
+                ${weatherHTML}
+                <div class="step-desc">${step.desc}</div>
+                ${chainHTML}
+                <div class="nav-buttons">
+                    <button class="nav-btn" id="nextStepBtn">${currentStep === steps.length-1 ? '✨ مشاهده خلاصه کامل ✨' : 'بعدی ←'}</button>
+                </div>
+            `;
+
+            if (step.hasChain) {
+                setTimeout(() => buildChainAnimation('chainContainer'), 50);
+            }
+
+            const nextBtn = document.getElementById('nextStepBtn');
+            if (nextBtn) {
+                nextBtn.onclick = () => {
+                    if (currentStep < steps.length - 1) {
+                        currentStep++;
+                        renderCurrentStep();
+                        window.scrollTo({ top: stepViewDiv.offsetTop - 30, behavior: 'smooth' });
+                    } else {
+                        completed = true;
+                        showFullTimeline();
+                    }
+                };
+            }
+        }
+
+        function showFullTimeline() {
+            if (chainInterval) clearInterval(chainInterval);
+            stepViewDiv.style.display = 'none';
+            fullTimelineDiv.style.display = 'block';
+
+            let html = `
+                <div class="quote-glorious">
+                    <div class="quote-arabic-big">مَنْ كُنْتُ مَوْلاَهُ فَهَذَا عَلِیٌّ مَوْلاَهُ</div>
+                    <div style="margin-top: 10px;">«هر کس من مولای او هستم، این علی مولای اوست»</div>
+                    <div style="margin-top: 5px; font-size:0.8rem;">اعلام جانشینی در حضور 100 هزار نفر · ذوالحجه ۱۰ هجری</div>
+                </div>
+                <h2 style="text-align:center; margin: 2rem 0 1rem;"><i class="fas fa-stream"></i> 📜 خط زمان کامل غدیر خم</h2>
+            `;
+
+            steps.forEach((step, idx) => {
+                let extra = '';
+                if (step.hasChain) extra = '<div><i class="fas fa-people-arrows"></i> سیستم پخش زنده انسانی: پیامبر → نفر بالاتر → الی الاخر</div>';
+                if (step.weather) extra += '<div><i class="fas fa-fire"></i> گرمای شدید: غذا خام روی زمین می‌پخت</div>';
+                // ساعت شنی توی توضیحات حفظ می‌شه (به جای حذف کردن، نگه می‌داریم)
+                html += `
+                    <div class="timeline-item" data-step="${idx}">
+                        <div class="timeline-icon"><i class="${step.icon}"></i></div>
+                        <div class="timeline-content">
+                            <h3>${step.title}</h3>
+                            <p>${step.desc}</p>
+                            ${extra}
+                        </div>
+                    </div>
+                `;
+            });
+
+            fullTimelineDiv.innerHTML = html;
+
+            // اضافه کردن رویداد کلیک به هر آیتم تایم‌لاین
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            timelineItems.forEach(item => {
+                item.addEventListener('click', (e) => {
+                    const stepIdx = parseInt(item.getAttribute('data-step'));
+                    if (!isNaN(stepIdx)) {
+                        scrollToStep(stepIdx);
+                    }
+                });
+            });
+        }
+
+        // ========== تم و تصاویر ==========
+        const darkBgImage = 'dark-bg.jpg';
+        const lightBgImage = 'light-bg.jpg';
+
+        const body = document.body;
+        const themeBtn = document.getElementById('themeSwitcher');
+
+        function setThemeImages(isLight) {
+            if (isLight) {
+                body.style.setProperty('--dark-bg', 'none');
+                body.style.setProperty('--light-bg', `url('${lightBgImage}')`);
+            } else {
+                body.style.setProperty('--light-bg', 'none');
+                body.style.setProperty('--dark-bg', `url('${darkBgImage}')`);
+            }
+        }
+
+        // پیش‌فرض روی حالت روشن
+        const savedTheme = localStorage.getItem('ghadirTheme');
+        if (savedTheme === 'dark') {
+            body.classList.add('dark');
+            body.classList.remove('light');
+            themeBtn.innerHTML = '<i class="fas fa-sun"></i> تم روشن';
+            setThemeImages(false);
+        } else {
+            body.classList.add('light');
+            body.classList.remove('dark');
+            themeBtn.innerHTML = '<i class="fas fa-moon"></i> تم شب';
+            setThemeImages(true);
+        }
+
+        themeBtn.addEventListener('click', () => {
+            const isLight = body.classList.contains('light');
+            if (isLight) {
+                body.classList.remove('light');
+                body.classList.add('dark');
+                localStorage.setItem('ghadirTheme', 'dark');
+                themeBtn.innerHTML = '<i class="fas fa-sun"></i> تم روشن';
+                setThemeImages(false);
+            } else {
+                body.classList.remove('dark');
+                body.classList.add('light');
+                localStorage.setItem('ghadirTheme', 'light');
+                themeBtn.innerHTML = '<i class="fas fa-moon"></i> تم شب';
+                setThemeImages(true);
+            }
+        });
+
+        // دکمه بازگشت به بالا
+        const goToTopBtn = document.getElementById('goToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                goToTopBtn.classList.add('show');
+            } else {
+                goToTopBtn.classList.remove('show');
+            }
+        });
+        goToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ذرات
+        function createParticle() {
+            const p = document.createElement('div');
+            const size = Math.random() * 6 + 2;
+            p.classList.add('particle');
+            p.style.width = size + 'px';
+            p.style.height = size + 'px';
+            p.style.left = Math.random() * 100 + '%';
+            p.style.animationDuration = Math.random() * 8 + 6 + 's';
+            p.style.animationDelay = Math.random() * 5 + 's';
+            document.body.appendChild(p);
+            setTimeout(() => p.remove(), 12000);
+        }
+        setInterval(createParticle, 700);
+        for (let i = 0; i < 15; i++) setTimeout(createParticle, i * 150);
+
+        renderCurrentStep();
+    </script>
+</body>
+</html>
